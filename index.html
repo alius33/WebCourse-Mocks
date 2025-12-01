@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritime Exam Mastery | The Examiner's Edge</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0a192f',
+                            800: '#112240',
+                            700: '#233554',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                        },
+                        sea: {
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0a192f;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23112240' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-navy-900 text-white fixed w-full z-50 border-b border-navy-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="ph-fill ph-anchor text-gold-400 text-2xl"></i>
+                    <span class="font-serif text-xl font-bold tracking-wide">MaritimeMastery</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#bookshop" class="hover:text-white transition">Digital Bookshop</a>
+                    <a href="#mock-exams" class="hover:text-white transition">Mock Exams</a>
+                    <a href="#video-courses" class="hover:text-white transition">Video Courses</a>
+                    <a href="#membership" class="hover:text-white transition">Captain's Club</a>
+                </div>
+                <button class="bg-gold-500 hover:bg-gold-400 text-navy-900 px-5 py-2 rounded-full font-bold text-sm transition shadow-lg">
+                    Student Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative hero-pattern text-white pt-32 pb-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-navy-900/90 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <div class="inline-flex items-center space-x-2 bg-navy-800 px-3 py-1 rounded-full border border-navy-700 mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-gold-400">Pass First Time</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                    Stop Guessing.<br>
+                    <span class="text-gold-400">Know What The Examiner Wants.</span>
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed max-w-lg">
+                    Thousands of students fail because they give "dangerous answers." Get the inside knowledge from a real MCA Examiner and secure your future at sea.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#mock-exams" class="flex items-center justify-center space-x-2 bg-gold-500 hover:bg-gold-400 text-navy-900 px-8 py-3 rounded-lg font-bold transition shadow-lg shadow-gold-500/20">
+                        <span>Book a Mock Exam</span>
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                    <a href="#bookshop" class="flex items-center justify-center space-x-2 bg-navy-800 hover:bg-navy-700 text-white px-8 py-3 rounded-lg font-semibold border border-navy-700 transition">
+                        <span>Download Checklists</span>
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <!-- Abstract Dashboard Mockup -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="h-12 w-12 bg-gold-500 rounded-full flex items-center justify-center">
+                            <i class="ph-fill ph-check text-navy-900 text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-400">Status</p>
+                            <p class="font-bold text-white">MCA Oral Exam: PASSED</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="h-2 bg-white/10 rounded-full w-3/4"></div>
+                        <div class="h-2 bg-white/10 rounded-full w-full"></div>
+                        <div class="h-2 bg-white/10 rounded-full w-5/6"></div>
+                    </div>
+                    <div class="mt-6 p-4 bg-navy-900/50 rounded-lg border border-navy-700">
+                        <p class="text-sm italic text-slate-300">"The Examiner asked exactly what was in your 'Fail List'. I knew the answer immediately."</p>
+                        <p class="text-xs text-gold-400 mt-2 font-bold">- 2nd Officer James T.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Value Proposition -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">Why Use An Ex-Examiner?</h2>
+                <p class="text-slate-600 text-lg">Books teach you the theory. I teach you how to survive the exam room.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-sea-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="ph-duotone ph-warning-circle text-sea-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Avoid "Fail" Answers</h3>
+                    <p class="text-slate-600">I know the difference between a confident answer and a dangerous one. Don't let a simple mistake end your exam.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-sea-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="ph-duotone ph-notebook text-sea-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Real Case Studies</h3>
+                    <p class="text-slate-600">Learn from real accidents and my time at sea. Understand <em>why</em> regulations exist, don't just memorize them.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-sea-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="ph-duotone ph-chart-line-up text-sea-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Strategic Preparation</h3>
+                    <p class="text-slate-600">From the "Ladder Strategy" to "The Notebook Method," I use data to predict what questions you will face.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 1: Digital Bookshop -->
+    <section id="bookshop" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-sea-500 font-bold uppercase tracking-wider text-sm">Option 1: Self Study</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mt-2">The Digital Bookshop</h2>
+                    <p class="text-slate-600 mt-2">Download instantly. Study at your own pace.</p>
+                </div>
+                <a href="#" class="text-navy-900 font-bold hover:text-sea-500 transition mt-4 md:mt-0 flex items-center">
+                    View All Documents <i class="ph-bold ph-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product: The Fail List -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="h-40 bg-navy-800 flex items-center justify-center">
+                        <i class="ph-duotone ph-list-checks text-gold-400 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-navy-900">The "Fail" List</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">£9</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">Top 10 mistakes that fail students immediately. Essential reading.</p>
+                        <button class="w-full py-2 border border-navy-900 text-navy-900 rounded font-bold hover:bg-navy-900 hover:text-white transition">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Product: Examiner's Checklist -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="h-40 bg-navy-700 flex items-center justify-center">
+                        <i class="ph-duotone ph-clipboard-text text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-navy-900">Examiner's Checklist</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">£14</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">Exact words required for distress situations. "Step 1: Sound Alarm..."</p>
+                        <button class="w-full py-2 border border-navy-900 text-navy-900 rounded font-bold hover:bg-navy-900 hover:text-white transition">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Product: Rule of Road Pack -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition relative">
+                    <div class="absolute top-3 right-3 bg-gold-500 text-navy-900 text-xs font-bold px-2 py-1 rounded">Best Seller</div>
+                    <div class="h-40 bg-sea-500 flex items-center justify-center">
+                        <i class="ph-duotone ph-lighthouse text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-navy-900">ROR Complete Pack</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">£25</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">Bundle: Lights, Shapes, and Sound Signals. Save £5.</p>
+                        <button class="w-full py-2 border border-navy-900 text-navy-900 rounded font-bold hover:bg-navy-900 hover:text-white transition">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Product: Safety Pack -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="h-40 bg-slate-200 flex items-center justify-center">
+                        <i class="ph-duotone ph-lifebuoy text-navy-700 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-navy-900">Safety & Emergency</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">£29</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">Drill guides and SOLAS summary. Step-by-step procedures.</p>
+                        <button class="w-full py-2 border border-navy-900 text-navy-900 rounded font-bold hover:bg-navy-900 hover:text-white transition">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 2 & 4: Mock Exams & Groups -->
+    <section id="mock-exams" class="py-20 bg-navy-900 text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-gold-400 font-bold uppercase tracking-wider text-sm">Option 2: The Gold Standard</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6 mt-2">1-on-1 Mock Exams</h2>
+                    <p class="text-slate-300 text-lg mb-8">
+                        The ultimate preparation. 45 minutes of strict testing followed by 15 minutes of detailed feedback. 
+                        Cure your nervousness before the real day.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="ph-fill ph-check-circle text-gold-400 text-xl"></i>
+                            <span>Find your weak points instantly</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ph-fill ph-check-circle text-gold-400 text-xl"></i>
+                            <span>Experience the pressure of the real exam</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ph-fill ph-check-circle text-gold-400 text-xl"></i>
+                            <span>Optional: Video recording of your session</span>
+                        </li>
+                    </ul>
+
+                    <button class="bg-gold-500 hover:bg-gold-400 text-navy-900 px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg w-full md:w-auto">
+                        Book Your Slot (£120)
+                    </button>
+                </div>
+
+                <!-- Calendar / Group Class Card -->
+                <div class="bg-navy-800 rounded-2xl p-8 border border-navy-700 shadow-2xl">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold">Upcoming Availability</h3>
+                        <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs font-bold">Live</span>
+                    </div>
+
+                    <!-- Mock Exam Slot -->
+                    <div class="bg-navy-900 p-4 rounded-lg border border-navy-700 mb-4 flex justify-between items-center group cursor-pointer hover:border-gold-500 transition">
+                        <div>
+                            <p class="font-bold">Mon, 12th Oct - 10:00 AM</p>
+                            <p class="text-sm text-slate-400">1-on-1 Mock Exam</p>
+                        </div>
+                        <i class="ph-bold ph-caret-right text-slate-500 group-hover:text-gold-400"></i>
+                    </div>
+
+                    <!-- Mock Exam Slot -->
+                    <div class="bg-navy-900 p-4 rounded-lg border border-navy-700 mb-8 flex justify-between items-center group cursor-pointer hover:border-gold-500 transition">
+                        <div>
+                            <p class="font-bold">Tue, 13th Oct - 14:00 PM</p>
+                            <p class="text-sm text-slate-400">1-on-1 Mock Exam</p>
+                        </div>
+                        <i class="ph-bold ph-caret-right text-slate-500 group-hover:text-gold-400"></i>
+                    </div>
+
+                    <div class="border-t border-navy-700 pt-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-bold text-gold-400">Option 4: Group Class Webinar</h4>
+                            <span class="text-sm text-slate-400">£20/seat</span>
+                        </div>
+                        <div class="bg-navy-700/50 p-4 rounded-lg">
+                            <p class="font-bold mb-1">Sat, 17th Oct - 10:00 AM</p>
+                            <p class="text-sm text-slate-300">"Mastering Marpol Annex 1"</p>
+                            <button class="w-full mt-3 bg-navy-600 hover:bg-navy-500 text-white py-2 rounded font-semibold text-sm transition">Join Group Class</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 3: Video Captain -->
+    <section id="video-courses" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-sea-500 font-bold uppercase tracking-wider text-sm">Option 3: The Video Captain</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mt-2">Visual Learning Library</h2>
+                <p class="text-slate-600 mt-2 max-w-2xl mx-auto">Watch me demonstrate Chart Work and Buoyage models. Access the library anytime, anywhere.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Video Card -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-xl overflow-hidden aspect-video bg-slate-900 mb-4 shadow-lg">
+                        <div class="absolute inset-0 flex items-center justify-center z-10">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition duration-300">
+                                <i class="ph-fill ph-play text-white text-3xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+                        <!-- Decorative gradient representing video thumbnail -->
+                        <div class="w-full h-full bg-gradient-to-br from-navy-800 to-navy-600"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold">How to interpret a Synoptic Chart</div>
+                        <div class="absolute bottom-4 right-4 text-xs font-bold bg-black/60 text-white px-2 py-1 rounded">20:15</div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-bold text-navy-900 group-hover:text-sea-500 transition">Chart Work Masterclass</h3>
+                        <span class="text-sm text-slate-500">Subscription Only</span>
+                    </div>
+                </div>
+
+                <!-- Video Card -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-xl overflow-hidden aspect-video bg-slate-900 mb-4 shadow-lg">
+                        <div class="absolute inset-0 flex items-center justify-center z-10">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition duration-300">
+                                <i class="ph-fill ph-play text-white text-3xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+                        <!-- Decorative gradient representing video thumbnail -->
+                        <div class="w-full h-full bg-gradient-to-br from-sea-700 to-sea-500"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold">Rule of the Road: Visual Buoyage</div>
+                        <div class="absolute bottom-4 right-4 text-xs font-bold bg-black/60 text-white px-2 py-1 rounded">15:42</div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-bold text-navy-900 group-hover:text-sea-500 transition">Visual Buoyage Models</h3>
+                        <span class="text-sm text-slate-500">Subscription Only</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 5: Membership -->
+    <section id="membership" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-6">Join The "Captain's Club"</h2>
+            <p class="text-slate-600 text-lg mb-10">Stay updated with the changing maritime world. Get a steady stream of new materials and direct access to me.</p>
+
+            <div class="bg-white rounded-2xl shadow-xl border border-gold-200 p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-navy-900 via-gold-400 to-navy-900"></div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="text-left space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="ph-fill ph-file-pdf text-gold-500 text-xl"></i>
+                            <span class="text-navy-900 font-medium">One new PDF/Video every month</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="ph-fill ph-envelope-open text-gold-500 text-xl"></i>
+                            <span class="text-navy-900 font-medium">Private email access (Ask 1 Q/week)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="ph-fill ph-newspaper text-gold-500 text-xl"></i>
+                            <span class="text-navy-900 font-medium">Monthly M-Notice Newsletter</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="ph-fill ph-arrows-clockwise text-gold-500 text-xl"></i>
+                            <span class="text-navy-900 font-medium">Quarterly Regulation Updates</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
+                        <p class="text-slate-500 text-sm mb-2">Monthly Membership</p>
+                        <div class="text-4xl font-bold text-navy-900 mb-4">£15<span class="text-lg text-slate-400 font-normal">/mo</span></div>
+                        <button class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-3 rounded-lg transition shadow-lg">
+                            Join the Club
+                        </button>
+                        <p class="text-xs text-slate-400 mt-3">Cancel anytime. Secure payment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-400 py-12 border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 text-white mb-4">
+                    <i class="ph-fill ph-anchor text-gold-400 text-2xl"></i>
+                    <span class="font-serif text-xl font-bold">MaritimeMastery</span>
+                </div>
+                <p class="max-w-xs text-sm">Helping seafarers pass their MCA exams with confidence using inside knowledge from experienced examiners.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Products</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-gold-400 transition">Fail List (The Taster)</a></li>
+                    <li><a href="#" class="hover:text-gold-400 transition">Safety Pack (The Meal)</a></li>
+                    <li><a href="#" class="hover:text-gold-400 transition">Mock Exams (VIP)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-gold-400 transition">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-gold-400 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-gold-400 transition">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-navy-800 text-center text-xs">
+            &copy; 2023 Maritime Mastery. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
